@@ -8,6 +8,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 #sliderLabel{
@@ -27,7 +31,7 @@ body {
 	border-radius: 8px;
 
 	display: flex;
-	width: min(90%, 500px);
+	width: 100%;
 }
 
 .slider-knob {
@@ -49,7 +53,8 @@ body {
 }
 
 p {
-	margin: 1rem 0
+	margin: 1rem 0 2rem;
+	text-align: center;
 }
 
 #gravityChoice {
@@ -58,10 +63,9 @@ p {
 
 #gravityChoice > label,
 #gravityChoice > label > input {
-	margin-right: 0.5ch;
+	white-space: nowrap;
+	margin: 0.5ch 0.5ch 0.5ch 0;
 }
-
-
 
 .force-grabbing,
 .force-grabbing .slider-knob::after {
@@ -70,4 +74,12 @@ p {
 
 .force-grabbing .slider {
 	transition: 0s;
+}
+
+.w100 {
+	width: 100%;
+}
+
+footer {
+	margin-top: 1rem;
 }

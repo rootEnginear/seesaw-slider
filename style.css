@@ -1,0 +1,73 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+
+	color: #111;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#sliderLabel{
+	margin-bottom: 1rem;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.slider {
+	background: #FFDC00;
+	border: 1px solid #111;
+
+	transform-origin: center;
+	transform: rotate(var(--rot, 0deg));
+	transition: transform 0.1s;
+	padding: 4px;
+	border-radius: 8px;
+
+	display: flex;
+	width: min(90%, 500px);
+}
+
+.slider-knob {
+	user-select: none;
+}
+
+.slider-knob::after {
+	content: '::';
+	font-family: monospace;
+	cursor: grab;
+	font-weight: bold;
+	padding: 0 0.5ch;
+}
+
+.slider input {
+	flex: 1 1 0;
+	accent-color: #111;
+	pointer-events: none;
+}
+
+p {
+	margin: 1rem 0
+}
+
+#gravityChoice {
+	margin-top: 0.5rem;
+}
+
+#gravityChoice > label,
+#gravityChoice > label > input {
+	margin-right: 0.5ch;
+}
+
+
+
+.force-grabbing,
+.force-grabbing .slider-knob::after {
+	cursor: grabbing !important;
+}
+
+.force-grabbing .slider {
+	transition: 0s;
+}

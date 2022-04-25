@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reseter.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Seesaw Slider</title>
+  <meta name="description"
+    content="The Next Generation Slider Input with Innovative User Experience">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://rootenginear.github.io/seesaw-slider/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seesaw Slider">
+  <meta property="og:description"
+    content="The Next Generation Slider Input with Innovative User Experience">
+  <meta property="og:image" content="https://rootenginear.github.io/seesaw-slider/og.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="dropbox.poom.dev">
+  <meta property="twitter:url" content="https://rootenginear.github.io/seesaw-slider/">
+  <meta name="twitter:title" content="Seesaw Slider">
+  <meta name="twitter:description"
+    content="The Next Generation Slider Input with Innovative User Experience">
+  <meta name="twitter:image"
+    content="https://rootenginear.github.io/seesaw-slider/og.jpg">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏄</text></svg>">
+
+</head>
+
+<body>
+  <label id="sliderLabel" for="sliderInput">50%</label>
+  <div class="slider" style="--rot: 0deg">
+    <div class="slider-knob left"></div>
+    <input id="sliderInput" type="range" max="100" step="0.0001">
+    <div class="slider-knob right"></div>
+  </div>
+  <p>
+    Click and drag <code>::</code> to rotate the slider. Release to stop the slider.
+  </p>
+  <section>
+    <strong>Try other gravity:</strong>
+    <div id="gravityChoice">
+      <label>
+        <input type="radio" name="gravity" value="1" checked>Earth
+        🌏&#xFE0F;
+      </label>
+      <label>
+        <input type="radio" name="gravity" value="0.1657">Moon
+        🌑&#xFE0F;
+      </label>
+      <label>
+        <input type="radio" name="gravity" value="0.379">Mars
+        🛡&#xFE0F;
+      </label>
+      <label>
+        <input type="radio" name="gravity" value="2.528">Jupiter
+        👑&#xFE0F;
+      </label>
+      <label>
+        <input type="radio" name="gravity" value="28">Sun
+        ☀&#xFE0F;
+      </label>
+    </div>
+  </section>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

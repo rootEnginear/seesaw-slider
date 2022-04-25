@@ -42,9 +42,10 @@ const sliderMousedown = (e) => {
 }
 
 const lockMousemoveToSlider = (e) => {
-	const angle =
+	let angle =
 		(Math.atan2(e.clientY - sliderCenterY, e.clientX - sliderCenterX) * 180) / Math.PI -
 		+invert * 180
+	if (angle < -180) angle += 360 // so it does not spin back (animation) over a half turn
 	slider.setAttribute('style', `--rot: ${angle}deg`)
 
 	const mg = 10 * g
